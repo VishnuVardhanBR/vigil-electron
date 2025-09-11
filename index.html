@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ONNX Electron App</title>
+    <meta charset="UTF-8">
+    <title>Industrial Machine Monitor</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 20px; background-color: #f4f4f9; color: #333; }
+        h1 { color: #005a9c; }
+        #data-output {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: "Courier New", Courier, monospace;
+            min-height: 200px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-  <h1>ONNX Prediction</h1>
-  <p id="result">Loading...</p>
+    <h1>Live Machine Data</h1>
+    <pre id="data-output">Waiting for data...</pre>
+    <script src="renderer.js"></script>
 </body>
 </html>
